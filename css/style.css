@@ -1,0 +1,256 @@
+:root {
+    --blanco:#fff;
+    --negro:#181717;
+    --colorPrincipal:#fc4a1a;
+    --colorSecundario:#f7b733;
+
+    --fuentePrincipa:'Roboto', sans-serif;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuentePrincipa);
+    font-size: 1.6rem;
+    background-image: linear-gradient(to left, #fc4a1a, #f7b733);
+}
+
+.container {
+    width: 90%;
+    max-width: 90rem;
+    margin: 0 auto;
+    background-color: #ff3d08;
+    
+}
+
+.body__titulo{
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--blanco);
+    padding: 2rem;
+    
+    
+
+}
+@media (min-width:768px){
+    .body__titulo{
+        
+        font-size: 3.5rem;
+    
+        
+    }
+}
+.row {
+    background-color: var(--blanco);
+    /* padding: 0rem 3rem; */
+    /* padding: 0 1rem 1rem 1rem; */
+
+    -webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);   
+}
+.div_error{
+    /* background-color: var(--blanco); */
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+  
+}
+@media (min-width:768px) {
+    .div_error{
+        flex-direction: row;
+        gap: 6rem;
+    }
+}
+.columna{
+    width: 100%;
+    padding: 0 1rem 0 1rem;
+    /* background-color: #f7b733; */
+}
+.formulario__titulo{
+    margin-bottom: 2rem;
+   
+    
+}
+
+@media (min-width:768px) {
+    .formulario__campo{
+    
+        
+        display: grid;
+        
+
+    }
+}
+
+.formulario__label{
+    font-size: 1.5rem;
+}
+
+.formulario__input{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border: 1px solid var(--colorSecundario);
+
+    
+}
+.boton__submit{
+    border: none;
+    background-color: var(--colorPrincipal);
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    color: var(--blanco);
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.boton__submit:hover {
+    background-color:#d63a0f ;
+}
+
+.formulario__titulo{
+    margin: 0rem 0 2rem 0;
+    padding: 0;
+    font-size: 2rem;
+    color: var(--negro);
+    font-weight: 700;
+    /* text-align: center; */
+}
+
+
+
+.columna__titulo {
+    margin-top: 4rem;
+    font-size: 2rem;
+}
+@media (min-width:768px) {
+    .columna__titulo {
+        margin-top: 0;
+    }
+}
+
+.div__error{
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.error {
+    background-color: rgb(223, 5, 5);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--blanco);
+    margin: 0 auto;
+    width: 100%;
+    
+}
+.success {
+    background-color: rgb(5, 223, 52);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--blanco);
+    margin: 0;
+}
+
+
+.citas {
+    /* background-color: gray; */
+    
+    padding: 1rem;
+}
+
+@media (min-width:768px) {
+    .citas {
+        /* background-color: gray; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        margin-bottom: 4rem;
+        padding: 0;
+    }
+}
+h2{
+    margin: 1rem 0;
+}
+p{
+    margin: .5rem 0;
+    
+}
+.span{
+    font-weight: 700;
+}
+.divBotones{
+
+    display: flex;
+    gap: 2rem;
+    /* justify-content: space-between; */
+
+}
+@media (min-width:768px){
+    .divBotones{
+        /* flex-direction: row; */
+    }
+}
+.btn__eliminar{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    padding: 1rem ;
+    text-transform: uppercase;
+    color: var(--blanco);
+    font-size: 1.2rem;
+    padding: 1.5rem 0;
+    width: 45%;
+    border-radius: .5rem;
+  
+
+    font-weight: 700;
+    font-size: 1.2rem;
+    
+}
+@media (min-width:768px) {
+    .btn__eliminar{
+        width: 35%;
+    }
+}
+.btn__eliminar:hover {
+    background-color: rgb(204, 6, 6);
+    cursor: pointer;
+}
+.btn__editar{
+    background-color: rgb(0, 255, 42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    color: var(--blanco);
+    font-size: 1.2rem;
+    width: 45%;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    
+}
+@media (min-width:768px) {
+    .btn__editar{
+        width: 35%;
+    }
+}
+.btn__editar:hover{
+    background-color: rgb(3, 179, 32);
+    cursor: pointer;
+}

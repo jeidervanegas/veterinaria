@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador citas Veteriaria</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="body__titulo container">Administrador de pacientes de veterinaria</h1>
+
+    <div class="container">
+        <div id="contenido" class="row">
+            <div class="div_error">
+                <div class="columna">
+                    <form class="formulario">
+                        <div class="formulario__contenedor">
+    
+                        
+                            <h2 class="formulario__titulo">Datos del Paciente</h2>
+    
+                            <div class="formulario__campo">
+                                <label for="" class="formulario__label">Nombre mascota:</label>
+                                <div class="formulario__grupo">
+                                    <input 
+                                        class="formulario__input" type="text" 
+                                        placeholder="Nombre mascota" id="mascota" 
+                                        name="mascota">
+                                </div>
+                            </div>
+    
+                            <div class="formulario__campo">
+                                <label for="" class="formulario__label">Propietario:</label>
+                                <div class="formulario__grupo">
+                                    <input 
+                                        class="formulario__input" type="text" 
+                                        placeholder="Nombre dueño de la mascota" 
+                                        id="propietario" 
+                                        name="propietario">
+                                </div>
+                            </div>
+    
+                            <div class="formulario__campo">
+                                <label for="" class="formulario__label">Telefono:</label>
+                                <div class="formulario__grupo">
+                                    <input 
+                                        class="formulario__input" type="tel" 
+                                        placeholder="Número de telefono" 
+                                        id="telefono" 
+                                        name="telefono">
+                                </div>
+                            </div>
+    
+                            <div class="formulario__campo">
+                                <label for="" class="formulario__label">Fecha:</label>
+                                <div class="formulario__grupo">
+                                    <input 
+                                        class="formulario__input" type="date" 
+                                        placeholder="Número de telefono" 
+                                        id="fecha" 
+                                        name="fecha">
+                                </div>
+                            </div>
+    
+                            <div class="formulario__campo">
+                                <label for="" class="formulario__label">Hora:</label>
+                                <div class="formulario__grupo">
+                                    <input 
+                                        class="formulario__input formulario__input--time" type="time" 
+                                        placeholder="Número de telefono" 
+                                        id="hora" 
+                                        name="hora">
+                                </div>
+                            </div>
+    
+                            <div class="formulario__campo">
+                                <label for="" class="formulario__label">Síntomas:</label>
+                                <div class="formulario__grupo">
+                                    <textarea 
+                                        class="formulario__input"
+                                        id="sintomas" 
+                                        name="sintomas"></textarea>
+                                </div>
+                            </div>
+    
+                            <div class="formulario__campo">
+                            <button class="boton__submit" type="submit">Crear cita</button>
+                            </div>
+    
+    
+                        </div>
+                    </form>
+                </div>
+                <div class="columna">
+                    <h2 class="columna__titulo">Administra tus Citas</h2>
+                    <ul class="citas"></ul>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+    <script src="script/scrip.js"></script>
+</body>
+</html>
